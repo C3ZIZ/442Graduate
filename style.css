@@ -14,13 +14,25 @@ body {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: calc(16px + 1vw);
     text-align: center;
     padding: 15px;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-family: serif;
 }
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 18px;
+    }
+  }
 
 body {
     background-image: url("End_Poem_background.webp");
